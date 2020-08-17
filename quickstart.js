@@ -30,7 +30,7 @@ fs.readFile('client_secret.json', function processClientSecrets(err, content) {
 function authorize(credentials, callback) {
     const clientSecret = credentials.installed.client_secret;
     const clientId = credentials.installed.client_id;
-    const redirectUrl = credentials.installed.redirect_uris;
+    const redirectUrl = credentials.installed.redirect_uris[0];
     const oauth2Client = new OAuth2(clientId, clientSecret, redirectUrl);
 
     // Check if we have previously stored a token.

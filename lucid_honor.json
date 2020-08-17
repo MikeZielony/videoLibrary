@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lucid-honor-286710",
+  "private_key_id": "197bfd21563ccee9204512283756ca33c9fe24b5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDRWuMV6+rKanHw\n/wRiN28QwvX8Vvlis0XGGLoEBGkFROtEaeNuYsEXu+eLoaVtOVH+zPfAeIq6Q/S9\nkpQJLP9zLMpzYGlXgooVBDfwCQ79PoLgBxL6Q1Qu/sW401QDL9XfNoSJEKrT2bvs\nyHIntlhoJIbYB29xswcEbnxvC9wloWCEnDb/QtEbwgrD25O9oeO4q+enAO2y221V\npd6dES4CKZI7QECkwOrpwrmrE9J7cK3kia4tY3/oPUFf+W/9F0B7Z7/Mi46MK95R\nk01IPp9g05qUW0RGyPdiOaZX9omxkjYDKpsQsay9qxaaHw84/KVvx7ZKq/iGeA6x\n2u3wCmntAgMBAAECggEAMhIY+Ev7lGxXcoJnj77+1QUv9GlvzVOflzSgPqg4Xu6A\nD1V889ByKqVCCHMBf+lC61wl0BZ0ZX6tyO5G8hfdQ7RdejE/mJKryEGBSGs+NsLN\n5dtDRnA2cOP1sZH3iKiW8AMXuTlvheoQKF47cTSLGeNMjdvfY1PkVILBR4TQYv4x\n6aMQnHt9s0ovhSnFtjQ4eFn8xJqQjvW2Z6Sk9JFpsczTfPR439lCIvTX/MKZartH\n8ArT1U43Rj6UhdDPE1e5v2ALiQWxCSQ5yUl8GW4dQOZeqQWCAqiX7n7gC2KxUuS6\n5t8txiOO3FK2ADJTqJQc6aCIUWV8UGR7pugzMCQpAQKBgQD551SQp+ZpLBvviuzy\nRzN59r9LugiIOsAX2yDBLYzWiR+TsK88uTolfRbVU7iCxZDvHaigJvvlag6aOK8h\ndbp6ugs2ybDUlMXuIlJUGim3YbeH9Sq95YtDyaT6FY+Rez6Nme5cGTAIxvFVlMVL\nftX1shY9UymeiFGiGobODSczAQKBgQDWdlPCpyTGQpAQixvItLqNb0piZqqoueCj\nFLGvUHA2LwQA9DKbo8q293pPudHoNb8JXcVcZxFjC22hgALh4NbaPilhDn7rnrdt\nKjcCH5p9sjKjo9qUHvZC+k4yiXo8BPPkMdFZ8Fn297NG5V/XtidENTUVv3iv+jFZ\nk+nX3Moy7QKBgQDXgz4Uehdkf9ufmwl4bxrfhYG3hrmw8imS6TC4J9Ybdam7rlWR\nYpPYnKXCVy755/Nzovo3EyeM0wfAzD2L94FYMXVWTF2pFpwTH5osWVu8gBLMtwuj\nNIADd7REz68+YTCy4RsEZdxc1WRuz5vN3ZYbCvfO7xcnVpw/1eyHaiRyAQKBgQCr\n04owfvI71sDOQGY2XHbLMsuKI2/AV4zfnIjwSaZeAzVV/lE92fFkvstEbUD8p3Mz\n8elaq0mG7XUc3A9zIk2B9iP5G0AdT8Duuc/w55lD9C4WZgWOf3AXIazdWMCSrfUq\nc6+kO6oY8US2HLi5f7veLjMmBY6QkAhSGOxWgxON0QKBgQDbInW8eMRf/ASFwphx\n7PTjEKOLMJwX6skJBqWXL4kv6hdMQsvCnBOgS/UJMzT4jiLRuC0A3Naer682Xltl\n9R2epSUWOyTRLatV1Pw/nWlhbK2QtCNiB+Ja92ZZE0FFqkG4kB4jcminuNJcLYfI\ny/Kwjqn8cwgAD12WLMovhuCGxA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "videolibrary@lucid-honor-286710.iam.gserviceaccount.com",
+  "client_id": "107181920681291138781",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/videolibrary%40lucid-honor-286710.iam.gserviceaccount.com"
+}
