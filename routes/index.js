@@ -11,5 +11,6 @@ router.get('/', pagesController.mainPage);
 router.get('/shit', pagesController.shit);
 
 router.post('/form',applicationsController.store);
+router.post('/edit',applicationsController.edit);
 
 module.exports = router;

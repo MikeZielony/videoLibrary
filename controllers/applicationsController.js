@@ -1,8 +1,5 @@
 exports.store = (req, res) => {
-
     res.render('confirm');
-
-
     console.log('hahs');
 
     const sqlite3 = require('sqlite3').verbose();
@@ -18,13 +15,13 @@ exports.store = (req, res) => {
     const title = req.body.title;
     const description = req.body.description;
     const tag = req.body.tag;
-    const uploadedBy = req.body.uploadedBy;
+    const uploaded = req.body.uploaded;
     const email = req.body.email;
     const url = req.body.url;
 
     let sql = `INSERT INTO movies (title, description, tag, uploaded, email, url)
             VALUES (?, ?, ?, ?, ?, ?);`;
-    db.run(sql, [title,  description, tag, uploadedBy, email, url], function (err, rows, fields) {
+    db.run(sql, [title, description, tag, uploaded, email, url], function (err, rows, fields) {
     });
 
     db.all(sql, [], (err, rows) => {
@@ -75,13 +72,11 @@ exports.delete = (req, res) => {
 
 // close the database connection
     db.close();
-
     console.log('Disconnected from the in-memory SQlite database.');
-
     module.exports = db;
 }
 
-exports.update = (req, res) => {
+exports.edit = (req, res) => {
     res.render('confirm');
 
     const sqlite3 = require('sqlite3').verbose();
@@ -94,17 +89,16 @@ exports.update = (req, res) => {
         console.log('Connected to the in-memory SQlite database.');
     });
 
+    const id = req.body.id;
     const title = req.body.title;
     const description = req.body.description;
     const tag = req.body.tag;
-    const uploadedBy = req.body.uploadedBy;
+    const uploaded = req.body.uploaded;
     const email = req.body.email;
     const url = req.body.url;
 
-
-
-    let data = [title,  description, tag, uploadedBy, email, url, id];
-    let sql = `UPDATE UserStory
+    let data = [title, description, tag, uploaded, email, url, id];
+    let sql = `UPDATE movies
             SET title = ?,
             description = ?,
             tag = ?,
@@ -124,6 +118,6 @@ exports.update = (req, res) => {
 
 // close the database connection
     db.close();
-
-    console.log('Disconnected from the in-memory SQlite database.');};
+    console.log('Disconnected from the in-memory SQlite database.');
+};
 

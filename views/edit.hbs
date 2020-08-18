@@ -1,12 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title> edit </title>
+    <meta charset="utf-8">
+    <title> Video Library edit panel
+        {{ title_of_head }}
+    </title>
 </head>
-
 <body>
-<h2> Your data was written in edit </h2>
-
-<form action="/" method='GET'>
-    <input type="submit" value="back to start">
+<h2>Edit existing video -
+    {{ title_of_head }}</h2>
+<form action="/edit{{id}}" method="post">
+    <label for="id">Video id</label><br>
+    <textarea name="id" id="id" rows="1" cols="80">{{ id }}</textarea><br><br>
+    <label for="title">Video title</label><br>
+    <textarea name="title" id="title" rows="1" cols="80">{{ title }}</textarea><br><br>
+    <label for="description">Description</label><br>
+    <textarea name="description" id=description rows="8" cols="80">{{ description }}</textarea><br><br>
+    <label for="tag">Add tag</label><br>
+    <textarea name="tag" id="tag" rows="8" cols="80">{{ tag }}</textarea><br><br>
+    <label for="uploaded">Video uploaded</label><br>
+    <textarea name="uploaded" id="uploaded" rows="1" cols="80">{{ uploaded }}</textarea><br><br>
+    <label for="email" >E-mail</label><br>
+    <input name="email" type="number" id="email" value ="{{ email }}"><br><br>
+    <label for="url">Status</label><br>
+    <br>
+    <input type="submit" value="Submit">
 </form>
+</body>
+</html>
