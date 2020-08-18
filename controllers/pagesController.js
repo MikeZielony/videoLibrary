@@ -50,3 +50,33 @@ exports.delete = (req, res) => {
     res.render('delete');
 };
 
+exports.search5 = (req, res) => {
+
+    // open the database
+
+    let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
+        if (err) {
+            return console.error(err.message);
+        }
+        console.log('Connected to the in-memory SQlite database.');
+    });
+
+    let sql = `SELECT * FROM movies
+ORDER BY random()
+LIMIT 5;`;
+
+    db.all(sql, (err, row) => {
+        if (err) {
+            throw err;
+        }
+
+        res.render('search5',{"row" : row});
+
+        console.log(row);
+    });
+
+    // close the database connection
+    db.close();
+    console.log('disconnected from the in-memory SQlite database.');
+
+};

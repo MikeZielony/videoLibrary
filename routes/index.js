@@ -5,6 +5,7 @@ const pagesController = require('../controllers/pagesController');
 const applicationsController = require('../controllers/applicationsController');
 
 router.get('/search', pagesController.search);
+router.get('/search5', pagesController.search5);
 router.get('/confirm', pagesController.confirm);
 router.get('/edit', pagesController.edit);
 router.get('/', pagesController.mainPage);
