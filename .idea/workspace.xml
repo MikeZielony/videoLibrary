@@ -20,12 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5bc458f-a576-4fd7-a5d5-82ad2d46759c" name="Default Changelist" comment="Merge branch 'mzi' of https://github.com/NataliaRajska/videoLibrary into mzi&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;controllers/pagesController.js&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;views/main.hbs">
+      <change afterPath="$PROJECT_DIR$/views/delete.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/applicationsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/applicationsController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/pagesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/pagesController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataBase/movies" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/movies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/edit.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/edit.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/shit.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/shit.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/mainPage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/mainPage.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/search.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/search.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +65,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.8.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.0.27" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v14.8.0/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="quickstasrt" type="NodeJSConfigurationType" working-dir="$PROJECT_DIR$">
@@ -82,6 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597652637454</updated>
       <workItem from="1597652639243" duration="3497000" />
+      <workItem from="1597749581989" duration="1788000" />
     </task>
     <servers />
   </component>
@@ -137,6 +145,10 @@
     </state>
     <state width="1899" height="304" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1597742177534" />
     <state width="1899" height="290" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1597662595166" />
+    <state x="314" y="159" width="728" height="475" key="MultipleFileMergeDialog" timestamp="1597750114031">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="314" y="159" width="728" height="475" key="MultipleFileMergeDialog/0.27.1366.741/0.27.1366.741@0.27.1366.741" timestamp="1597750114031" />
     <state x="172" y="31" key="SettingsEditor" timestamp="1597737690184">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
