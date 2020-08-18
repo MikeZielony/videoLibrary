@@ -7,8 +7,37 @@ html {
     background-position: top left;
     background-size: 100% 100%;
     /*max-width: 1000px;*/
+    text-align: center;
 }
 
 h1 {
     margin-left: 2em;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.numbertext {
+    position: absolute;
+    top: 0;
+    padding: 8px 12px;
+    color: white;
+    font-size: 16px;
+}
+
+.text {
+    color: lightseagreen;
+    font-size: 15px;
+    padding: 8px 12px;
+    position:absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
