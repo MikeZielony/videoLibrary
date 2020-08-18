@@ -14,7 +14,7 @@ exports.edit = (req, res) => {
     res.render('edit');
 };
 
-exports.sheet = (req, res) => {
-    res.render('sheet');
+exports.shit = (req, res) => {
+    res.render('shit');
 };
 

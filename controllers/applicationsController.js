@@ -8,7 +8,7 @@ exports.store = (req, res) => {
     const sqlite3 = require('sqlite3').verbose();
 
 // open database in memory
-    let db = new sqlite3.Database('Database/videoLibrary.db', sqlite3.OPEN_READWRITE, (err) => {
+    let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
         if (err) {
             return console.error(err.message);
         }
@@ -22,7 +22,7 @@ exports.store = (req, res) => {
     const email = req.body.email;
     const url = req.body.url;
 
-    sql = `INSERT INTO UserStory (title, description, tag, uploaded, email, url)
+    let sql = `INSERT INTO movies (title, description, tag, uploaded, email, url)
             VALUES (?, ?, ?, ?, ?, ?);`;
     db.run(sql, [title,  description, tag, uploadedBy, email, url], function (err, rows, fields) {
     });
@@ -52,7 +52,7 @@ exports.delete = (req, res) => {
     const sqlite3 = require('sqlite3').verbose();
 
 // open a database connection
-    let db = new sqlite3.Database('Database/SuperSprinter3000.db', sqlite3.OPEN_READWRITE, (err) => {
+    let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
         if (err) {
             return console.error(err.message);
         }
@@ -62,7 +62,7 @@ exports.delete = (req, res) => {
     const id = req.body.id;
 
     let data = [id];
-    let sql = `DELETE FROM UserStory      
+    let sql = `DELETE FROM movies      
             WHERE id = ?`;
 
     db.run(sql, data, function (err) {
@@ -87,31 +87,30 @@ exports.update = (req, res) => {
     const sqlite3 = require('sqlite3').verbose();
 
 // open a database connection
-    let db = new sqlite3.Database('Database/SuperSprinter3000.db', sqlite3.OPEN_READWRITE, (err) => {
+    let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
         if (err) {
             return console.error(err.message);
         }
         console.log('Connected to the in-memory SQlite database.');
     });
 
-    const id = req.body.id;
     const title = req.body.title;
-    const story = req.body.story;
-    const criteria = req.body.criteria;
-    const businessvalue = req.body.businessvalue;
-    const estimation = req.body.estimation;
-    const status = req.body.status;
+    const description = req.body.description;
+    const tag = req.body.tag;
+    const uploadedBy = req.body.uploadedBy;
+    const email = req.body.email;
+    const url = req.body.url;
 
 
 
-    let data = [title, story, criteria, businessvalue, estimation, status, id];
+    let data = [title,  description, tag, uploadedBy, email, url, id];
     let sql = `UPDATE UserStory
             SET title = ?,
-            story = ?,
-            criteria = ?,
-            businessvalue = ?, 
-            estimation = ?, 
-            status = ?
+            description = ?,
+            tag = ?,
+            uploaded = ?, 
+            email = ?, 
+            url = ?
             
             WHERE id = ?`;
 
