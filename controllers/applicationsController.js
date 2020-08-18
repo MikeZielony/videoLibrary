@@ -1,7 +1,9 @@
 exports.store = (req, res) => {
 
-    res.render('confirm');
-    console.log('hahs');
+    res.render('confirm');}
+
+
+  /*  console.log('hahs');
 
     const sqlite3 = require('sqlite3').verbose();
 
@@ -124,5 +126,6 @@ exports.update = (req, res) => {
 // close the database connection
     db.close();
 
-    console.log('Disconnected from the in-memory SQlite database.');
-}
+    console.log('Disconnected from the in-memory SQlite database.');};
+
+*/

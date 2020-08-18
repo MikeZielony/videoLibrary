@@ -19,18 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5bc458f-a576-4fd7-a5d5-82ad2d46759c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/applicationsController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/mainPage.hbs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/sheet.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/aplicationsController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/pagesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/pagesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="b5bc458f-a576-4fd7-a5d5-82ad2d46759c" name="Default Changelist" comment="Merge branch 'mzi' of https://github.com/NataliaRajska/videoLibrary into mzi&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;controllers/pagesController.js&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;views/main.hbs">
+      <change beforePath="$PROJECT_DIR$/controllers/applicationsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/applicationsController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/list.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/search.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/main.hbs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
