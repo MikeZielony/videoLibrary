@@ -1,0 +1,14 @@
+html {
+    font-family: 'Baloo Tamma 2', cursive;
+    background-image: url("https://static01.nyt.com/images/2018/12/14/world/14xp-filmregistry4/14xp-filmregistry4-superJumbo.jpg?quality=90&auto=webp");
+    font-size: xx-large;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top left;
+    background-size: 100% 100%;
+    /*max-width: 1000px;*/
+}
+
+h1 {
+    margin-left: 2em;
+}

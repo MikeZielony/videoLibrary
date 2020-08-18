@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5bc458f-a576-4fd7-a5d5-82ad2d46759c" name="Default Changelist" comment="Merge branch 'mzi' of https://github.com/NataliaRajska/videoLibrary into mzi&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;controllers/pagesController.js&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;views/main.hbs">
+      <change afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/pagesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/pagesController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/mainPage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/mainPage.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/search.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/search.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +70,9 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/views" />
     </key>
