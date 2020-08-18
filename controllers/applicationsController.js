@@ -1,9 +1,9 @@
 exports.store = (req, res) => {
 
-    res.render('confirm');}
+    res.render('confirm');
 
 
-  /*  console.log('hahs');
+    console.log('hahs');
 
     const sqlite3 = require('sqlite3').verbose();
 
@@ -16,15 +16,15 @@ exports.store = (req, res) => {
     });
 
     const title = req.body.title;
-    const story = req.body.story;
-    const criteria = req.body.criteria;
-    const businessvalue = req.body.businessvalue;
-    const estimation = req.body.estimation;
-    const status = req.body.status;
+    const description = req.body.description;
+    const tag = req.body.tag;
+    const uploadedBy = req.body.uploadedBy;
+    const email = req.body.email;
+    const url = req.body.url;
 
-    sql = `INSERT INTO UserStory (title, story, criteria, businessvalue, estimation, status)
+    sql = `INSERT INTO UserStory (title, description, tag, uploaded, email, url)
             VALUES (?, ?, ?, ?, ?, ?);`;
-    db.run(sql, [title, story, criteria, businessvalue, estimation, status], function (err, rows, fields) {
+    db.run(sql, [title,  description, tag, uploadedBy, email, url], function (err, rows, fields) {
     });
 
     db.all(sql, [], (err, rows) => {
@@ -128,4 +128,3 @@ exports.update = (req, res) => {
 
     console.log('Disconnected from the in-memory SQlite database.');};
 
-*/
