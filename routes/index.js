@@ -15,5 +15,6 @@ router.get('/delete', pagesController.delete);
 router.post('/form',applicationsController.store);
 router.post('/edit',applicationsController.edit);
 router.post('/delete',applicationsController.delete);
+router.post('/decision',applicationsController.decision);
 
 module.exports = router;

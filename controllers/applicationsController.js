@@ -121,3 +121,9 @@ exports.edit = (req, res) => {
     console.log('Disconnected from the in-memory SQlite database.');
 };
 
+exports.decision = (req, res) => {
+
+    const id = id.body.id;
+    const choice = value.body.value;
+    res.render('decison')};
+

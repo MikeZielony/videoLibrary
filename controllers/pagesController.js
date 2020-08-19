@@ -62,8 +62,8 @@ exports.search5 = (req, res) => {
     });
 
     let sql = `SELECT * FROM movies
-ORDER BY random()
-LIMIT 5;`;
+                ORDER BY random() ASC
+                    LIMIT 5;`;
 
     db.all(sql, (err, row) => {
         if (err) {
