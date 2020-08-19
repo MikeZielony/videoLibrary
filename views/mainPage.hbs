@@ -1,57 +1,73 @@
 <!doctype html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<!--    <script src="views/main.js"></script>-->
     <title>Main page</title>
 </head>
-
 <body>
-<h2> Video Library menu </h2>
-
-
-<form action="/shit" method='GET'>
-    <input type="submit" value="Add new video">
-</form>
-
-<form action="/search" method='GET'>
-    <input type="submit" value="Search">
-</form>
-
-<form action="/edit" method='GET'>
-    <input type="submit" value="Edit video">
-</form>
-
-<form action="/delete" method='GET'>
-    <input type="submit" value="Delete video">
-</form>
-
-<form action="/search5" method='GET'>
-    <input type="submit" value="Get five">
-</form>
-
+<p id="title"><h1> Video Library menu </h1>
 
 <div class="slideshow-container">
-    <div class="mySlides">
-        <div class="numbertext">
-            1 / 3
-        </div>
-        <img src="img/image1.jpg" alt="background">
-        <div class="text">First image</div>
+
+    <div class="mySlides fade">
+        <img src="img/1.jpg" style="width:100%">
     </div>
-    <div class="mySlides">
-        <div class="numbertext">
-            2 / 3
-        </div>
-        <img src="img/image2.jpg" alt="background">
-        <div class="text">Second image</div>
+
+    <div class="mySlides fade">
+        <img src="img/2.jpg" style="width:100%">
     </div>
-    <div class="mySlides">
-        <div class="numbertext">
-            3 / 3
-        </div>
-        <img src="img/image3.jpg" alt="background">
-        <div class="text">Third image</div>
+
+    <div class="mySlides fade">
+        <img src="img/3.jpg" style="width:100%">
     </div>
+
 </div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<div class="btnBlock">
+<form action="/shit" method='GET'>
+    <input id="btnMain" type="submit" value="Add new video">
+</form>
+<form action="/search" method='GET'>
+    <input id="btnMain" type="submit" value="Search">
+</form>
+<form action="/edit" method='GET'>
+    <input id="btnMain" type="submit" value="Edit video">
+</form>
+<form action="/search5" method='GET'>
+    <input id="btnMain" type="submit" value="Get five">
+</form>
+</div>
+
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+</body>
+</html>
