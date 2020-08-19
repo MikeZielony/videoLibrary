@@ -123,7 +123,22 @@ exports.edit = (req, res) => {
 
 exports.decision = (req, res) => {
 
-    const id = id.body.id;
-    const choice = value.body.value;
-    res.render('decison')};
+    const decision = req.body.choice;
+    const id = req.body.id;
+
+
+    if(decision === 'edit') {
+        res.render('edit');
+    }else{
+
+        res.render('confirm')
+    }
+
+    console.log(decision);
+
+};
+
+
+
+
 

@@ -9,14 +9,19 @@
 <body>
 <h2>Delete existing video -
     {{ title_of_head }}</h2>
-<form action="/decison{{id}}" method="post"> <label for="id">Video id</label><br>
+<form action="/decision" method="post">
+    <label for="id">Video id</label><br>
     <textarea name="id" id="id" >{{ id }}</textarea><br><br>
 
-    <input type="checkbox" id="delete" name="delete" value="delete">
-    <label for="vehicle1"> I want delete movie</label><br>
-    <input type="checkbox" id="edit" name="edit" value="edit">
-    <label for="edit"> I want edit movie</label><br>
-    <input type="submit" value="Submit">
+
+   <label> <input type="radio" name="choice" value="delete">I  want delete movie</label>
+    <br><br>
+    <label> <input type="radio"  name="choice" value="edit">I want edit movie</label>
+    <br><br>
+    <input type="submit" value="back to start">
+
+
 </form>
+
 </body>
 </html>

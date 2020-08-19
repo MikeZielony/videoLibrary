@@ -11,6 +11,7 @@ router.get('/edit', pagesController.edit);
 router.get('/', pagesController.mainPage);
 router.get('/shit', pagesController.shit);
 router.get('/delete', pagesController.delete);
+router.get('/iframe', pagesController.iframe);
 
 router.post('/form',applicationsController.store);
 router.post('/edit',applicationsController.edit);
