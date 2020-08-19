@@ -46,7 +46,7 @@ exports.store = (req, res) => {
 exports.delete = (req, res) => {
     res.render('confirm');
 
-    const sqlite3 = require('sqlite3').verbose();
+    //const sqlite3 = require('sqlite3').verbose();
 
 // open a database connection
     let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {

@@ -28,8 +28,6 @@ exports.search = (req, res) => {
         }
 
        res.render('search',{"row" : row});
-
-        console.log(row);
     });
 
     // close the database connection
