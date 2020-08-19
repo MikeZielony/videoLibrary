@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5bc458f-a576-4fd7-a5d5-82ad2d46759c" name="Default Changelist" comment="Merge branch 'mzi' of https://github.com/NataliaRajska/videoLibrary into mzi&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;controllers/pagesController.js&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;views/main.hbs">
-      <change afterPath="$PROJECT_DIR$/public/css/formula.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataBase/movies" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/movies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/test.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/mainPage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/mainPage.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/formula.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/formula.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/edit.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/edit.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/shit.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/shit.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +95,7 @@
       <workItem from="1597652639243" duration="3497000" />
       <workItem from="1597749581989" duration="1788000" />
       <workItem from="1597766980805" duration="611000" />
-      <workItem from="1597815557749" duration="19206000" />
+      <workItem from="1597815557749" duration="22319000" />
     </task>
     <servers />
   </component>
