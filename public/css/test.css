@@ -106,4 +106,13 @@ h1 {
     padding: 2em;
     width: 250px;
     height: 150px;
+    border: transparent;
+}
+
+#btnMain:focus {
+    outline: none;
+}
+
+#btnMain:hover {
+    color: #de9f42;
 }
