@@ -37,7 +37,31 @@ exports.search = (req, res) => {
 };
 
 exports.edit = (req, res) => {
-    res.render('edit');
+    // open the database
+
+    let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
+        if (err) {
+            return console.error(err.message);
+        }
+        console.log('Connected to the in-memory SQlite database.');
+    });
+
+    let sql = `SELECT *
+                   FROM movies`;
+
+    db.all(sql, (err, row) => {
+        if (err) {
+            throw err;
+        }
+
+        res.render('edit',{"row" : row});
+    });
+
+    // close the database connection
+    db.close();
+    console.log('disconnected from the in-memory SQlite database.');
+
+   // res.render('edit');
 };
 
 exports.iframe = (req, res) => {
