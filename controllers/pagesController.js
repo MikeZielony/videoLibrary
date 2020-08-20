@@ -37,6 +37,8 @@ exports.search = (req, res) => {
 };
 
 exports.edit = (req, res) => {
+    const  id = require('/controllers/applicationsController');
+
     // open the database
 
     let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
@@ -46,15 +48,18 @@ exports.edit = (req, res) => {
         console.log('Connected to the in-memory SQlite database.');
     });
 
-    let sql = `SELECT *
-                   FROM movies`;
 
-    db.all(sql, (err, row) => {
+
+    let data = [id];
+    let sql = `SELECT * FROM movies      
+            WHERE id = ?`;
+
+    db.run(sql, data, function (err) {
         if (err) {
-            throw err;
+            return console.error(err.message);
         }
+        console.log(`Row(s) updated: ${this.changes}`);
 
-        res.render('edit',{"row" : row});
     });
 
     // close the database connection

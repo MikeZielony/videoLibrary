@@ -21,8 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4efa79dc-4511-4c3c-b1be-ff1c6bda2a5b" name="Default Changelist" comment="Merge branch 'mzi' of github.com:NataliaRajska/videoLibrary&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/applicationsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/applicationsController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/pagesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/pagesController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/edit.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/edit.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/shit.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/shit.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,9 +81,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'mzi' of https://github.com/NataliaRajska/videoLibrary into mzi&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;controllers/pagesController.js&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;views/main.hbs" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="192" y="112" key="MergeDialog" timestamp="1597913971751">
+      <screen x="0" y="23" width="1920" height="1004" />
+    </state>
+    <state x="192" y="112" key="MergeDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1597913971751" />
     <state x="314" y="159" width="728" height="475" key="MultipleFileMergeDialog" timestamp="1597911932103">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="314" y="159" width="728" height="475" key="MultipleFileMergeDialog/0.27.1366.741/0.27.1366.741@0.27.1366.741" timestamp="1597911932103" />
+    <state x="708" y="245" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597914185391">
+      <screen x="0" y="23" width="1920" height="1004" />
+    </state>
+    <state x="708" y="245" key="git4idea.branch.GitSmartOperationDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1597914185391" />
+    <state x="625" y="245" width="670" height="676" key="search.everywhere.popup" timestamp="1597920330727">
+      <screen x="0" y="23" width="1920" height="1004" />
+    </state>
+    <state x="625" y="245" width="670" height="676" key="search.everywhere.popup/0.23.1920.1004@0.23.1920.1004" timestamp="1597920330727" />
   </component>
 </project>

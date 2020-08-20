@@ -126,9 +126,8 @@ exports.decision = (req, res) => {
     const decision = req.body.choice;
     const id = req.body.id;
 
-
     if(decision === 'edit') {
-        res.render('edit');
+        res.render('edit')
     }else{
 
         res.render('confirm')
