@@ -13,7 +13,7 @@
 <form class="allForm" action="/form{{id}}" method="post">
     <div class="lineForm">
         <label for="title">Video title</label>
-        <textarea name="title" id="title">{{ title }}</textarea>
+        <textarea name="title" id="title" minlength="3">{{ title }}</textarea>
     </div>
     <div class="lineForm">
         <label for="description">Description</label>
@@ -25,7 +25,7 @@
     </div>
     <div class="lineForm">
         <label for="uploaded">Video uploaded</label>
-        <textarea name="uploaded" id="uploaded">{{ uploaded }}</textarea>
+        <textarea name="uploaded" id="uploaded" minlength="3">{{ uploaded }}</textarea>
     </div>
     <div class="lineForm">
         <label for="email">E-mail</label>

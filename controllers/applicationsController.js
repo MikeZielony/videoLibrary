@@ -44,7 +44,7 @@ exports.store = (req, res) => {
 }
 
 exports.delete = (req, res) => {
-    res.render('confirm');
+
 
     //const sqlite3 = require('sqlite3').verbose();
 
@@ -126,16 +126,36 @@ exports.decision = (req, res) => {
     const decision = req.body.choice;
     const id = req.body.id;
 
-
     if(decision === 'edit') {
-        res.render('edit');
+        res.render('edit')
     }else{
 
-        res.render('confirm')
+        const sqlite3 = require('sqlite3').verbose();
+
+        let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
+            if (err) {
+                return console.error(err.message);
+            }
+            console.log('Connected to the in-memory SQlite database.');
+            res.render('confirm');
+        });
+
+        let data = [id];
+        let sql = `DELETE FROM movies      
+            WHERE id = ?`;
+
+        db.run(sql, data, function (err) {
+            if (err) {
+                return console.error(err.message);
+            }
+            console.log(`Row(s) updated: ${this.changes}`);
+
+        });
+
+// close the database connection
+        db.close();
+        console.log('Disconnected from the in-memory SQlite database.');
     }
-
-    console.log(decision);
-
 };
 
 

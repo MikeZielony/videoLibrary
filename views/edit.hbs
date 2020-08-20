@@ -13,7 +13,7 @@
 <form class="allForm" action="/edit{{id}}" method="post">
     <div class="lineForm">
         <label for="id">Video id</label>
-        <textarea name="id" id="id">{{ id }}</textarea>
+        <textarea name="id" id="id" placeholder={{ this.id }} >{{ id }}</textarea>
     </div>
     <div class="lineForm">
         <label for="title">Video title</label>
@@ -42,6 +42,8 @@
     <div class="lineForm">
         <input id="subBtn" type="submit" value="Submit">
     </div>
+    <h1>ID to :</h1>
+    <h2>{{this.title}}</h2>
 </form>
 </body>
 </html>
