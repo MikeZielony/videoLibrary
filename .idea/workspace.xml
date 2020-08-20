@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b5bc458f-a576-4fd7-a5d5-82ad2d46759c" name="Default Changelist" comment="Merge branch 'mzi' of https://github.com/NataliaRajska/videoLibrary into mzi&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;controllers/pagesController.js&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;views/main.hbs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/applicationsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/applicationsController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/iframe.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/iframe.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/mainPage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/mainPage.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +92,9 @@
       <workItem from="1597766980805" duration="611000" />
       <workItem from="1597810981978" duration="868000" />
       <workItem from="1597814875137" duration="18067000" />
+      <workItem from="1597909778930" duration="855000" />
+      <workItem from="1597910658111" duration="2000" />
+      <workItem from="1597910672413" duration="44000" />
     </task>
     <servers />
   </component>
