@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+    background-image: url("https://wallpaperset.com/w/full/9/1/5/354209.jpg");
+    font-size: xx-large;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+    background-size: 100% 100%;
+    color: navajowhite;
+    display: flex;
+    text-align: left;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 1em;
+}
+
+.moviesList {
+    display: inline-block;
+    width: 10em;
+}
+
+ol {
+    font-size: 0.4em;
+}
+
+#col {
+    color: #de9924;
+    display: inline-block;
+}
+
+iframe {
+    width: 300px;
+    height: 200px;
+    border: transparent;
+    border-radius: 15px;
+}

@@ -38,10 +38,16 @@ h1 {
 
 label {
     flex: 2;
+    margin: auto;
 }
 
 textarea, input {
     flex: 4;
+    outline: none;
+    font-size: x-large;
+    font-family: unset;
+    padding:.9em 0 0 0;
+    border-radius: 5px;
 }
 
 #subBtn {
