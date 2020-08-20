@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/search.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title> Video Library </title>
+</head>
+<body>
+<div class="container">
+    <form action="/" method='GET'>
+        <input id="backMenu"  type="submit" value="back to start">
+    </form>
+    <h1>Video manager</h1>
+
+    {{#each row}}
+        <div class="moviesList">
+            <h2>{{this.title}}</h2>
+            <iframe src={{this.url}}
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            <ol><div id="col">ID: </div> {{this.id}}</ol>
+            <ol><div id="col">TITLE: </div> {{this.title}}</ol>
+            <ol><div id="col">DESCRIPTION: </div> {{this.description}}</ol>
+            <ol><div id="col">TAG: </div> {{this.tag}}</ol>
+            <ol><div id="col">UPLOADED: </div> {{this.uploaded}}</ol>
+            <ol><div id="col">E-MAIL: </div> {{this.email}}</ol>
+        </div>
+        {{#if this.completed}} (Completed){{/if}}
+    {{/each}}
+</div>
+</body>
+</html>

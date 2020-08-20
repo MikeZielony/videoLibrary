@@ -158,7 +158,10 @@ exports.decision = (req, res) => {
     }
 };
 
+exports.searchByTag = (req, res) => {
+    const tag = req.body.tag;
 
-
+    res.render('viewResult');
+}
 
 

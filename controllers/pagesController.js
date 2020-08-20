@@ -36,8 +36,8 @@ exports.search = (req, res) => {
 
 };
 
-exports.edit = (req, res) => {
-    const  id = require('/controllers/applicationsController');
+exports.viewResult = (req, res) => {
+    const  tag = require('/controllers/applicationsController');
 
     // open the database
 
@@ -50,23 +50,21 @@ exports.edit = (req, res) => {
 
 
 
-    let data = [id];
+    let data = [tag];
     let sql = `SELECT * FROM movies      
-            WHERE id = ?`;
+            WHERE tag like ?`;
 
     db.run(sql, data, function (err) {
         if (err) {
             return console.error(err.message);
         }
-        console.log(`Row(s) updated: ${this.changes}`);
+        res.render('viewResult',{"row" : row});
 
     });
 
     // close the database connection
     db.close();
     console.log('disconnected from the in-memory SQlite database.');
-
-   // res.render('edit');
 };
 
 exports.iframe = (req, res) => {
@@ -107,4 +105,37 @@ exports.delete = (req, res) => {
 
 exports.searchByTag = (req, res) => {
     res.render('searchByTag');
+};
+
+exports.edit = (req, res) => {
+    const  id = require('/controllers/applicationsController');
+
+    // open the database
+
+    let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
+        if (err) {
+            return console.error(err.message);
+        }
+        console.log('Connected to the in-memory SQlite database.');
+    });
+
+
+
+    let data = [id];
+    let sql = `SELECT * FROM movies      
+            WHERE id = ?`;
+
+    db.run(sql, data, function (err) {
+        if (err) {
+            return console.error(err.message);
+        }
+        console.log(`Row(s) updated: ${this.changes}`);
+
+    });
+
+    // close the database connection
+    db.close();
+    console.log('disconnected from the in-memory SQlite database.');
+
+    // res.render('edit');
 };

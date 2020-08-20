@@ -20,13 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3925cbea-cdf3-4ee1-8410-17459029a068" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/searchByTag.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/viewResult.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/applicationsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/applicationsController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/pagesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/pagesController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/movies" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/movies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/decision.hbs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/delete.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/delete.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/searchByTag.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/searchByTag.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
