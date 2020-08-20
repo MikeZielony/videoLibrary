@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="css/formula.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title> Video Library
         {{ title_of_head }}
     </title>
 </head>
 <body>
-<h2>Add new video -
-    {{ title_of_head }}</h2>
-<form action="/form{{id}}" method="post">
-    <label for="title">Video title</label><br>
-    <textarea name="title" id="title" rows="1" cols="80">{{ title }}</textarea><br><br>
-    <label for="description">Description</label><br>
-    <textarea name="description" id=description rows="8" cols="80">{{ description }}</textarea><br><br>
-    <label for="tag">Add tag</label><br>
-    <textarea name="tag" id="tag" rows="8" cols="80">{{ tag }}</textarea><br><br>
-    <label for="uploaded">Video uploaded</label><br>
-    <textarea name="uploaded" id="uploaded" rows="1" cols="80">{{ uploaded }}</textarea><br><br>
-    <label for="email" >E-mail</label><br>
-    <input name="email" type="number" id="email" value ="{{ email }}"><br><br>
-    <label for="url">Status</label><br>
-    <br>
-    <input type="submit" value="Submit">
+<h1>Add new video</h1>
+<form class="allForm" action="/form{{id}}" method="post">
+    <div class="lineForm">
+        <label for="title">Video title</label>
+        <textarea name="title" id="title">{{ title }}</textarea>
+    </div>
+    <div class="lineForm">
+        <label for="description">Description</label>
+        <textarea name="description" id=description>{{ description }}</textarea>
+    </div>
+    <div class="lineForm">
+        <label for="tag">Add tag</label>
+        <textarea name="tag" id="tag">{{ tag }}</textarea>
+    </div>
+    <div class="lineForm">
+        <label for="uploaded">Video uploaded</label>
+        <textarea name="uploaded" id="uploaded">{{ uploaded }}</textarea>
+    </div>
+    <div class="lineForm">
+        <label for="email">E-mail</label>
+        <input name="email" type="email" id="email" value="{{ email }}">
+    </div>
+    <div class="lineForm">
+        <label for="url">Video url</label>
+        <textarea name="url" id="url">{{ url }}</textarea>
+    </div>
+    <input id="subBtn" type="submit" value="Submit">
 </form>
 </body>
 </html>
