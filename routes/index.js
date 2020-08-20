@@ -11,10 +11,12 @@ router.get('/', pagesController.mainPage);
 router.get('/shit', pagesController.shit);
 router.get('/delete', pagesController.delete);
 router.get('/iframe', pagesController.iframe);
+router.get('/searchByTag', pagesController.searchByTag);
 
 router.post('/form',applicationsController.store);
 router.post('/edit',applicationsController.edit);
 router.post('/delete',applicationsController.delete);
 router.post('/decision',applicationsController.decision);
+router.post('/searchByTag', applicationsController.searchByTag);
 
 module.exports = router;

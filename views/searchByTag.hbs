@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/formula.css">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <title> Video Library delete panel
+    <title> Video Library searching panel
         {{ title_of_head }}
     </title>
 </head>
@@ -12,16 +12,12 @@
 <form action="/" method='GET'>
     <input id="backMenu"  type="submit" value="back to start">
 </form>
-<h1>Delete existing video </h1>
+<h1>Search video </h1>
 <form class="allForm" action="/decision" method="post">
     <div class="lineForm">
-    <label for="id">Video id</label>
-    <textarea name="id" id="id" >{{ id }}</textarea><br><br>
+    <label for="tag">write tag</label>
+    <textarea name="tag" id="tag" >{{ tag }}</textarea><br><br>
     </div>
-    <label> <input type="radio" name="choice" value="delete">I  want delete movie</label>
-    <br><br>
-    <label> <input type="radio"  name="choice" value="edit">I want edit movie</label>
-    <br><br>
     <input id="subBtn" type="submit" value="Confirm">
 
 </form>

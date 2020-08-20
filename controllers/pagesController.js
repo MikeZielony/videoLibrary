@@ -104,3 +104,7 @@ exports.shit = (req, res) => {
 exports.delete = (req, res) => {
     res.render('delete');
 };
+
+exports.searchByTag = (req, res) => {
+    res.render('searchByTag');
+};
