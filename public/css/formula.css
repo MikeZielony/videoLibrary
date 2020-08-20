@@ -42,6 +42,7 @@ label {
 
 textarea, input {
     flex: 4;
+    outline: none;
 }
 
 #subBtn {

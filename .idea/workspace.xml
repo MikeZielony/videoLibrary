@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4efa79dc-4511-4c3c-b1be-ff1c6bda2a5b" name="Default Changelist" comment="Merge branch 'mzi' of github.com:NataliaRajska/videoLibrary&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/movies" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/movies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/test.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/test.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/formula.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/formula.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
