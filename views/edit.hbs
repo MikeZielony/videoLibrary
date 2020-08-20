@@ -9,6 +9,9 @@
     </title>
 </head>
 <body>
+<form action="/" method='GET'>
+    <input id="backMenu"  type="submit" value="back to start">
+</form>
 <h1>Edit existing video</h1>
 <form class="allForm" action="/edit{{id}}" method="post">
     <div class="lineForm">
@@ -42,8 +45,6 @@
     <div class="lineForm">
         <input id="subBtn" type="submit" value="Submit">
     </div>
-    <h1>ID to :</h1>
-    <h2>{{this.title}}</h2>
 </form>
 </body>
 </html>

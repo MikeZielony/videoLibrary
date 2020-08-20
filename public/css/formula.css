@@ -54,7 +54,7 @@ textarea {
 #subBtn {
     background-color: rgb(75, 56, 59);
     padding: .6em 1.5em ;
-    margin-left: 500px;
+    margin-left: 400px;
     border-radius: 15px;
     font-family: 'Bangers', cursive;
     font-size: 1em;
@@ -77,4 +77,19 @@ input[type="email"] {
     font-family: unset;
     padding: 1.9em 0 0 0;
     border-radius: 5px;
+}
+
+#backMenu {
+    background-color: rgb(75, 56, 59);
+    padding: .6em 1.5em ;
+    margin-left: 0;
+    border-radius: 15px;
+    font-family: 'Bangers', cursive;
+    font-size: 1em;
+    color: navajowhite;
+    position: absolute;
+}
+
+#backMenu:focus {
+    outline: none;
 }

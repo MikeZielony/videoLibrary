@@ -116,3 +116,18 @@ h1 {
 #btnMain:hover {
     color: #de9f42;
 }
+
+#backMenu {
+    background-color: rgb(75, 56, 59);
+    padding: .6em 1.5em ;
+    margin-left: -20em;
+    border-radius: 15px;
+    font-family: 'Bangers', cursive;
+    font-size: 1em;
+    color: navajowhite;
+    position: absolute;
+}
+
+#backMenu:focus {
+    outline: none;
+}

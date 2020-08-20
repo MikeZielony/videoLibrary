@@ -42,3 +42,18 @@ iframe {
     border: transparent;
     border-radius: 15px;
 }
+
+#backMenu {
+    background-color: rgb(75, 56, 59);
+    padding: .6em 1.5em ;
+    margin-left: 0;
+    border-radius: 15px;
+    font-family: 'Bangers', cursive;
+    font-size: 1em;
+    color: navajowhite;
+    position: absolute;
+}
+
+#backMenu:focus {
+    outline: none;
+}

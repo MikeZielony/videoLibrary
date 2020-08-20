@@ -7,6 +7,9 @@
 </head>
 <body>
 <div class="container">
+    <form action="/" method='GET'>
+        <input id="backMenu"  type="submit" value="back to start">
+    </form>
     <h1>Video manager</h1>
     <script type="text/javascript">
         const opts = {
@@ -29,7 +32,6 @@
         </div>
         {{#if this.completed}} (Completed){{/if}}
     {{/each}}
-
 </div>
 </body>
 </html>

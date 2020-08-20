@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+    background-image: url("https://wallpaperset.com/w/full/9/1/5/354209.jpg");
+    font-size: xx-large;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+    background-size: 100% 100%;
+    color: navajowhite;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
