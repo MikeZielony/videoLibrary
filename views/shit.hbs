@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/formula.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title> Video Library
+        {{ title_of_head }}
+    </title>
+</head>
+<body>
+<h1>Add new video</h1>
+<form class="allForm" action="/form{{id}}" method="post">
+    <div class="lineForm">
+        <label for="title">Video title</label>
+        <textarea name="title" id="title">{{ title }}</textarea>
+    </div>
+    <div class="lineForm">
+        <label for="description">Description</label>
+        <textarea name="description" id=description>{{ description }}</textarea>
+    </div>
+    <div class="lineForm">
+        <label for="tag">Add tag</label>
+        <textarea name="tag" id="tag">{{ tag }}</textarea>
+    </div>
+    <div class="lineForm">
+        <label for="uploaded">Video uploaded</label>
+        <textarea name="uploaded" id="uploaded">{{ uploaded }}</textarea>
+    </div>
+    <div class="lineForm">
+        <label for="email">E-mail</label>
+        <input name="email" type="email" id="email" value="{{ email }}">
+    </div>
+    <div class="lineForm">
+        <label for="url">Video url</label>
+        <textarea name="url" id="url">{{ url }}</textarea>
+    </div>
+    <input id="subBtn" type="submit" value="Submit">
+</form>
+</body>
+</html>

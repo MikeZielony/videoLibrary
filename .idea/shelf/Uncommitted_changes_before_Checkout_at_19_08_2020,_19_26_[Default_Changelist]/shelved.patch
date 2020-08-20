@@ -1,0 +1,182 @@
+Index: server.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>const app = require('./app');\n\napp.set('port', process.env.PORT || 8001);\n\nconst server = app.listen(app.get('port'), () =>{\n    console.log(`Listening on ${server.address().port}`);\n})
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- server.js	(revision e5f81045f829c27127e1ae92ec00364397967fd7)
++++ server.js	(date 1597857797456)
+@@ -1,6 +1,6 @@
+ const app = require('./app');
+ 
+-app.set('port', process.env.PORT || 8001);
++app.set('port', process.env.PORT || 8002);
+ 
+ const server = app.listen(app.get('port'), () =>{
+     console.log(`Listening on ${server.address().port}`);
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"b5bc458f-a576-4fd7-a5d5-82ad2d46759c\" name=\"Default Changelist\" comment=\"Merge branch 'mzi' of https://github.com/NataliaRajska/videoLibrary into mzi&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;controllers/pagesController.js&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;views/main.hbs\">\n      <change afterPath=\"$PROJECT_DIR$/views/iframe.hbs\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/controllers/applicationsController.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/controllers/applicationsController.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/controllers/pagesController.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/controllers/pagesController.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/dataBase/movies\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/dataBase/movies\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/routes/index.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/routes/index.js\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/views/confirm.hbs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/views/confirm.hbs\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/views/delete.hbs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/views/delete.hbs\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/views/mainPage.hbs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/views/mainPage.hbs\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"package.json\" />\n        <option value=\"JavaScript File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"mzi\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"JsFlowSettings\">\n    <service-enabled>true</service-enabled>\n    <exe-path />\n    <other-services-enabled>true</other-services-enabled>\n    <auto-save>true</auto-save>\n  </component>\n  <component name=\"ProjectId\" id=\"1gDcWnZIKgS4BfUYAF5a6nSoCWK\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"javascript.nodejs.core.library.configured.version\" value=\"14.4.0\" />\n    <property name=\"javascript.nodejs.core.library.typings.version\" value=\"14.6.0\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/views\" />\n    <property name=\"nodejs_interpreter_path\" value=\"node\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"Settings.JavaScript\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/public/css\" />\n    </key>\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/views\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"quickstasrt\" type=\"NodeJSConfigurationType\" working-dir=\"$PROJECT_DIR$\">\n      <method v=\"2\" />\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"b5bc458f-a576-4fd7-a5d5-82ad2d46759c\" name=\"Default Changelist\" comment=\"\" />\n      <created>1597652637454</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1597652637454</updated>\n      <workItem from=\"1597652639243\" duration=\"3497000\" />\n      <workItem from=\"1597749581989\" duration=\"1788000\" />\n      <workItem from=\"1597766980805\" duration=\"611000\" />\n      <workItem from=\"1597810981978\" duration=\"868000\" />\n      <workItem from=\"1597814875137\" duration=\"16824000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"740\" y=\"195\" width=\"559\" height=\"402\" key=\"#Node.js_and_NPM\" timestamp=\"1597667359161\">\n      <screen x=\"0\" y=\"27\" width=\"1366\" height=\"741\" />\n    </state>\n    <state x=\"740\" y=\"195\" width=\"559\" height=\"402\" key=\"#Node.js_and_NPM/0.27.1366.741/0.27.1366.741@0.27.1366.741\" timestamp=\"1597667359161\" />\n    <state x=\"424\" y=\"213\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1597659639689\">\n      <screen x=\"0\" y=\"23\" width=\"1920\" height=\"1057\" />\n    </state>\n    <state x=\"424\" y=\"213\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057@0.23.1920.1057\" timestamp=\"1597659639689\" />\n    <state x=\"357\" y=\"198\" width=\"641\" height=\"396\" key=\"#com.intellij.fileTypes.FileTypeChooser\" timestamp=\"1597748136506\">\n      <screen x=\"0\" y=\"27\" width=\"1366\" height=\"741\" />\n    </state>\n    <state x=\"357\" y=\"198\" width=\"641\" height=\"396\" key=\"#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741/0.27.1366.741@0.27.1366.741\" timestamp=\"1597748136506\" />\n    <state x=\"416\" y=\"145\" width=\"524\" height=\"502\" key=\"#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog\" timestamp=\"1597668881289\">\n      <screen x=\"0\" y=\"27\" width=\"1366\" height=\"741\" />\n    </state>\n    <state x=\"416\" y=\"145\" width=\"524\" height=\"502\" key=\"#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741/0.27.1366.741@0.27.1366.741\" timestamp=\"1597668881289\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1597833731339\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731339\" />\n    <state width=\"1899\" height=\"290\" key=\"GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057\" timestamp=\"1597662595167\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.0.center\" timestamp=\"1597833731337\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731337\" />\n    <state width=\"1899\" height=\"290\" key=\"GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057\" timestamp=\"1597662595165\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.0.left\" timestamp=\"1597833731335\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731335\" />\n    <state width=\"1899\" height=\"290\" key=\"GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057\" timestamp=\"1597662595165\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.0.right\" timestamp=\"1597833731338\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731338\" />\n    <state width=\"1899\" height=\"290\" key=\"GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057\" timestamp=\"1597662595166\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1597833731342\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731342\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.1.center\" timestamp=\"1597833731341\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731341\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.1.left\" timestamp=\"1597833731340\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731340\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.1.right\" timestamp=\"1597833731341\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731341\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.2.bottom\" timestamp=\"1597833731345\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731345\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.2.center\" timestamp=\"1597833731343\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731343\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.2.left\" timestamp=\"1597833731343\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731343\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.2.right\" timestamp=\"1597833731344\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731344\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.3.bottom\" timestamp=\"1597833731349\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731349\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.3.center\" timestamp=\"1597833731347\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731347\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.3.left\" timestamp=\"1597833731346\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731346\" />\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.3.right\" timestamp=\"1597833731348\">\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1080\" />\n    </state>\n    <state width=\"1899\" height=\"376\" key=\"GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080\" timestamp=\"1597833731348\" />\n    <state x=\"314\" y=\"159\" width=\"728\" height=\"475\" key=\"MultipleFileMergeDialog\" timestamp=\"1597750114031\">\n      <screen x=\"0\" y=\"27\" width=\"1366\" height=\"741\" />\n    </state>\n    <state x=\"314\" y=\"159\" width=\"728\" height=\"475\" key=\"MultipleFileMergeDialog/0.27.1366.741/0.27.1366.741@0.27.1366.741\" timestamp=\"1597750114031\" />\n    <state x=\"172\" y=\"31\" key=\"SettingsEditor\" timestamp=\"1597737690184\">\n      <screen x=\"0\" y=\"27\" width=\"1366\" height=\"741\" />\n    </state>\n    <state x=\"172\" y=\"31\" key=\"SettingsEditor/0.27.1366.741/0.27.1366.741@0.27.1366.741\" timestamp=\"1597737690184\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision e5f81045f829c27127e1ae92ec00364397967fd7)
++++ .idea/workspace.xml	(date 1597857797812)
+@@ -20,15 +20,9 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="b5bc458f-a576-4fd7-a5d5-82ad2d46759c" name="Default Changelist" comment="Merge branch 'mzi' of https://github.com/NataliaRajska/videoLibrary into mzi&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;controllers/pagesController.js&#10;#&#9;package-lock.json&#10;#&#9;package.json&#10;#&#9;views/main.hbs">
+-      <change afterPath="$PROJECT_DIR$/views/iframe.hbs" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/controllers/applicationsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/applicationsController.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/controllers/pagesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/pagesController.js" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/dataBase/movies" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/movies" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/views/confirm.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/confirm.hbs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/views/delete.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/delete.hbs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/views/mainPage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/mainPage.hbs" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -40,6 +34,7 @@
+       <list>
+         <option value="package.json" />
+         <option value="JavaScript File" />
++        <option value="CSS File" />
+       </list>
+     </option>
+   </component>
+@@ -68,17 +63,19 @@
+     <property name="javascript.nodejs.core.library.configured.version" value="14.4.0" />
+     <property name="javascript.nodejs.core.library.typings.version" value="14.6.0" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
++    <property name="list.type.of.created.stylesheet" value="CSS" />
+     <property name="nodejs_interpreter_path" value="node" />
+     <property name="nodejs_package_manager_path" value="npm" />
+     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+   </component>
+   <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/views" />
++    </key>
+     <key name="MoveFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/views" />
+       <recent name="$PROJECT_DIR$/public/css" />
+     </key>
+-    <key name="CopyFile.RECENT_KEYS">
+-      <recent name="$PROJECT_DIR$/views" />
+-    </key>
+   </component>
+   <component name="RunManager">
+     <configuration name="quickstasrt" type="NodeJSConfigurationType" working-dir="$PROJECT_DIR$">
+@@ -96,8 +93,8 @@
+       <workItem from="1597652639243" duration="3497000" />
+       <workItem from="1597749581989" duration="1788000" />
+       <workItem from="1597766980805" duration="611000" />
+-      <workItem from="1597810981978" duration="868000" />
+-      <workItem from="1597814875137" duration="16824000" />
++      <workItem from="1597815557749" duration="22319000" />
++      <workItem from="1597857383712" duration="415000" />
+     </task>
+     <servers />
+   </component>
+@@ -133,74 +130,30 @@
+       <screen x="0" y="27" width="1366" height="741" />
+     </state>
+     <state x="416" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741/0.27.1366.741@0.27.1366.741" timestamp="1597668881289" />
+-    <state width="1899" height="376" key="GridCell.Tab.0.bottom" timestamp="1597833731339">
++    <state width="1899" height="304" key="GridCell.Tab.0.bottom" timestamp="1597742177536">
+       <screen x="0" y="0" width="1920" height="1080" />
+     </state>
+-    <state width="1899" height="376" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731339" />
++    <state width="1899" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1597742177536" />
+     <state width="1899" height="290" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1597662595167" />
+-    <state width="1899" height="376" key="GridCell.Tab.0.center" timestamp="1597833731337">
++    <state width="1899" height="304" key="GridCell.Tab.0.center" timestamp="1597742177533">
+       <screen x="0" y="0" width="1920" height="1080" />
+     </state>
+-    <state width="1899" height="376" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731337" />
++    <state width="1899" height="304" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1597742177533" />
+     <state width="1899" height="290" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1597662595165" />
+-    <state width="1899" height="376" key="GridCell.Tab.0.left" timestamp="1597833731335">
++    <state width="1899" height="304" key="GridCell.Tab.0.left" timestamp="1597742177532">
+       <screen x="0" y="0" width="1920" height="1080" />
+     </state>
+-    <state width="1899" height="376" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731335" />
++    <state width="1899" height="304" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1597742177532" />
+     <state width="1899" height="290" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1597662595165" />
+-    <state width="1899" height="376" key="GridCell.Tab.0.right" timestamp="1597833731338">
++    <state width="1899" height="304" key="GridCell.Tab.0.right" timestamp="1597742177534">
+       <screen x="0" y="0" width="1920" height="1080" />
+     </state>
+-    <state width="1899" height="376" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731338" />
++    <state width="1899" height="304" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1597742177534" />
+     <state width="1899" height="290" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1597662595166" />
+-    <state width="1899" height="376" key="GridCell.Tab.1.bottom" timestamp="1597833731342">
+-      <screen x="0" y="0" width="1920" height="1080" />
++    <state x="132" y="85" width="1092" height="622" key="MergeDialog" timestamp="1597857332978">
++      <screen x="0" y="27" width="1366" height="741" />
+     </state>
+-    <state width="1899" height="376" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731342" />
+-    <state width="1899" height="376" key="GridCell.Tab.1.center" timestamp="1597833731341">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1899" height="376" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731341" />
+-    <state width="1899" height="376" key="GridCell.Tab.1.left" timestamp="1597833731340">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1899" height="376" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731340" />
+-    <state width="1899" height="376" key="GridCell.Tab.1.right" timestamp="1597833731341">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1899" height="376" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731341" />
+-    <state width="1899" height="376" key="GridCell.Tab.2.bottom" timestamp="1597833731345">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1899" height="376" key="GridCell.Tab.2.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731345" />
+-    <state width="1899" height="376" key="GridCell.Tab.2.center" timestamp="1597833731343">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1899" height="376" key="GridCell.Tab.2.center/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731343" />
+-    <state width="1899" height="376" key="GridCell.Tab.2.left" timestamp="1597833731343">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1899" height="376" key="GridCell.Tab.2.left/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731343" />
+-    <state width="1899" height="376" key="GridCell.Tab.2.right" timestamp="1597833731344">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1899" height="376" key="GridCell.Tab.2.right/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731344" />
+-    <state width="1899" height="376" key="GridCell.Tab.3.bottom" timestamp="1597833731349">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1899" height="376" key="GridCell.Tab.3.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731349" />
+-    <state width="1899" height="376" key="GridCell.Tab.3.center" timestamp="1597833731347">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1899" height="376" key="GridCell.Tab.3.center/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731347" />
+-    <state width="1899" height="376" key="GridCell.Tab.3.left" timestamp="1597833731346">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1899" height="376" key="GridCell.Tab.3.left/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731346" />
+-    <state width="1899" height="376" key="GridCell.Tab.3.right" timestamp="1597833731348">
+-      <screen x="0" y="0" width="1920" height="1080" />
+-    </state>
+-    <state width="1899" height="376" key="GridCell.Tab.3.right/0.0.1920.1080@0.0.1920.1080" timestamp="1597833731348" />
++    <state x="132" y="85" width="1092" height="622" key="MergeDialog/0.27.1366.741@0.27.1366.741" timestamp="1597857332978" />
+     <state x="314" y="159" width="728" height="475" key="MultipleFileMergeDialog" timestamp="1597750114031">
+       <screen x="0" y="27" width="1366" height="741" />
+     </state>
+@@ -209,5 +162,9 @@
+       <screen x="0" y="27" width="1366" height="741" />
+     </state>
+     <state x="172" y="31" key="SettingsEditor/0.27.1366.741/0.27.1366.741@0.27.1366.741" timestamp="1597737690184" />
++    <state x="408" y="90" width="539" height="612" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597857309829">
++      <screen x="0" y="27" width="1366" height="741" />
++    </state>
++    <state x="408" y="90" width="539" height="612" key="git4idea.branch.GitSmartOperationDialog/0.27.1366.741@0.27.1366.741" timestamp="1597857309829" />
+   </component>
+ </project>
+\ No newline at end of file

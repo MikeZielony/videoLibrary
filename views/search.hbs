@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../public/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap" rel="stylesheet">
+    <title> Video Library </title>
+</head>
+<body>
+<div class="container">
+    <h1>Video manager</h1>
+    <script type="text/javascript">
+        const opts = {
+            url: 'http://localhost:8001/search/'
+        }
+    </script>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Video Title</th>
+            <th>Description</th>
+            <th>Tag</th>
+            <th>Uploaded By</th>
+            <th>Email</th>
+            <th>URL</th>
+        </tr>
+        {{#each row}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.title}}</td>
+               <td>{{this.description}}</td>
+                <td>{{this.tag}}</td>
+               <td>{{this.uploaded}}</td>
+               <td>{{this.email}}</td>
+               <td>{{this.url}}</td>
+            </tr>
+            {{#if this.completed}} (Completed){{/if}}
+        {{/each}}
+    </table>
+</div>
+</body>
+</html>

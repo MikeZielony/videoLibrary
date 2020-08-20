@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title> Video Library </title>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome in random video page</h1>
+    <script type="text/javascript">
+        const opts = {
+            url: 'http://localhost:8001/iframe/'
+        }
+    </script>
+        {{#each row}}
+            <h2>{{this.title}}</h2>
+            <iframe width="560"
+                    height="315"
+                    src={{this.url}}
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            {{#if this.completed}} (Completed){{/if}}
+        {{/each}}
+</div>
+</body>
+</html>
+
