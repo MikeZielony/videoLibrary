@@ -180,13 +180,15 @@ console.log(tag);
 
 
     let data = [tag];
-    let sql = `SELECT * FROM movies      
-            WHERE tag = ?`;
+    let sql = `SELECT * FROM movies where tag like ?`;
 
-    db.all(sql, (err, row) => {
+    db.all(sql, data, (err, row) => {
         if (err) {
             throw err;
         }
+        row.forEach((row) => {
+
+        });
 console.log(row);
         res.render('viewResult',{"row" : row});
 
