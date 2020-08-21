@@ -190,7 +190,7 @@ console.log(tag);
 
         });
 console.log(row);
-        res.render('viewResult',{"row" : row});
+        res.render('viewResult',{"row" : row, "tag" : tag});
 
     });
 
