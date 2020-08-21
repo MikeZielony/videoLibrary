@@ -164,4 +164,38 @@ exports.searchByTag = (req, res) => {
     res.render('viewResult');
 }
 
+exports.viewResult = (req, res) => {
+    const sqlite3 = require('sqlite3').verbose();
+    const  tag = req.body.tag;
+console.log(tag);
+    // open the database
+
+    let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
+        if (err) {
+            return console.error(err.message);
+        }
+        console.log('Connected to the in-memory SQlite database.');
+    });
+
+
+
+    let data = [tag];
+    let sql = `SELECT * FROM movies      
+            WHERE tag = ?`;
+
+    db.all(sql, (err, row) => {
+        if (err) {
+            throw err;
+        }
+console.log(row);
+        res.render('viewResult',{"row" : row});
+
+    });
+
+    // close the database connection
+    db.close();
+    console.log('disconnected from the in-memory SQlite database.');
+};
+
+
 

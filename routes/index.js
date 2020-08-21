@@ -19,6 +19,7 @@ router.post('/edit',applicationsController.edit);
 router.post('/delete',applicationsController.delete);
 router.post('/decision',applicationsController.decision);
 router.post('/searchByTag', applicationsController.searchByTag);
+router.post('/viewResult', applicationsController.viewResult);
 
 
 module.exports = router;

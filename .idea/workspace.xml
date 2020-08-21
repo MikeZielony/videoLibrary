@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3925cbea-cdf3-4ee1-8410-17459029a068" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/viewResult.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/applicationsController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/applicationsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/pagesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/pagesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/movies" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/movies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/searchByTag.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/searchByTag.hbs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,5 +99,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.27.1366.741/0.27.1366.741@0.27.1366.741" timestamp="1597920616026" />
+    <state x="728" y="245" key="git4idea.branch.GitSmartOperationDialog" timestamp="1597983662194">
+      <screen x="0" y="23" width="1920" height="1004" />
+    </state>
+    <state x="728" y="245" key="git4idea.branch.GitSmartOperationDialog/0.23.1920.1004@0.23.1920.1004" timestamp="1597983662194" />
   </component>
 </project>
