@@ -5,7 +5,7 @@ exports.store = (req, res) => {
     const sqlite3 = require('sqlite3').verbose();
 
 // open database in memory
-    let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
+    let db = new sqlite3.Database('database/movies', sqlite3.OPEN_READWRITE, (err) => {
         if (err) {
             return console.error(err.message);
         }
@@ -49,7 +49,7 @@ exports.delete = (req, res) => {
     //const sqlite3 = require('sqlite3').verbose();
 
 // open a database connection
-    let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
+    let db = new sqlite3.Database('database/movies', sqlite3.OPEN_READWRITE, (err) => {
         if (err) {
             return console.error(err.message);
         }
@@ -82,7 +82,7 @@ exports.edit = (req, res) => {
     const sqlite3 = require('sqlite3').verbose();
 
 // open a database connection
-    let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
+    let db = new sqlite3.Database('database/movies', sqlite3.OPEN_READWRITE, (err) => {
         if (err) {
             return console.error(err.message);
         }
@@ -132,7 +132,7 @@ exports.decision = (req, res) => {
 
         const sqlite3 = require('sqlite3').verbose();
 
-        let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
+        let db = new sqlite3.Database('database/movies', sqlite3.OPEN_READWRITE, (err) => {
             if (err) {
                 return console.error(err.message);
             }
@@ -170,7 +170,7 @@ exports.viewResult = (req, res) => {
 console.log(tag);
     // open the database
 
-    let db = new sqlite3.Database('dataBase/movies', sqlite3.OPEN_READWRITE, (err) => {
+    let db = new sqlite3.Database('database/movies', sqlite3.OPEN_READWRITE, (err) => {
         if (err) {
             return console.error(err.message);
         }
